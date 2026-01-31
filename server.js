@@ -195,7 +195,6 @@ app.post("/twilio/sms-inbound", async (req, res) => {
   res.status(200).send("OK");
 });
 
-const PORT = process.env.PORT || 8787;
 app.listen(PORT, () => {
   console.log(`CallCatch API running on http://localhost:${PORT}`);
 });
